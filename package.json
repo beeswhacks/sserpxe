@@ -1,0 +1,25 @@
+{
+  "name": "sserpxe",
+  "version": "1.0.0",
+  "description": "My attempt at recreating the express library (ish). Express, but backwards.",
+  "keywords": [
+    "express",
+    "javascript",
+    "js",
+    "server",
+    "node",
+    "http"
+  ],
+  "license": "MIT",
+  "author": "Jack Preston <je.preston20@gmail.com>",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "example": "tsc && node --inspect example.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  }
+}
