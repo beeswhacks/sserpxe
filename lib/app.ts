@@ -13,7 +13,6 @@ class App {
   runMiddlewares = (req: IncomingMessage, res: ServerResponse): void => {
     const runOne = (index: number) => {
       if (index < this.middlewares.length) {
-        console.log(`Running ${index}`);
         this.middlewares[index](req, res, () => runOne(index + 1));
       }
     };
